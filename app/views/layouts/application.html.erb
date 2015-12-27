@@ -13,15 +13,17 @@
 <header>
 
 <div class="col-xs-3">
+<%= link_to root_path, :class => 'logo' do %>
 
 <div class="circle">
   <br />
   To Code
   <br />
-  Or Not to Code
+  Or Not
   <br />
-  ?
+  To Code
 </div>
+<% end %>
 
 </div>
 
@@ -29,7 +31,7 @@
 Splurting out unsolicited advice about entrepreneurship since 2014
 </div>
 <div class="col-xs-5 links">
-<%= link_to 'Contribute', '#' %>
+<%= link_to 'Contribute', new_quote_path %>
 <%= link_to 'About', '#' %>
 </div>
 </header>
@@ -46,7 +48,7 @@ Splurting out unsolicited advice about entrepreneurship since 2014
 <div class="container">
 
 <div class="col-xs-6">
-<%= link_to "This isn't enough, I need more", "#", :class => 'next-quote' %>
+<%= link_to "This isn't enough, I need more", root_path, :class => 'next-quote' %>
 </div>
 
 <div class="col-xs-6 footer-blurb"> 

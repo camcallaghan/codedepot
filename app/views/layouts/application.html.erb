@@ -27,13 +27,13 @@
 
 </div>
 
-<div class="col-xs-4 slogan">
+<div class="col-sm-4 hidden-xs slogan">
 Splurting out unsolicited advice about entrepreneurship since 2014
 </div>
-<div class="col-xs-5 links">
-
+<div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-5 links">
 <!-- Button trigger modal -->
 <%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
+&nbsp;&nbsp;
 <%= link_to 'About', about_path %>
 </div>
 
@@ -51,8 +51,9 @@ Splurting out unsolicited advice about entrepreneurship since 2014
 
 		<%= simple_form_for Quote.new do |f| %>
           <div class="modal-body">
-            <%= f.input :saying %>
-            <%= f.input :author %>
+            <%= f.input :saying, :label => "What is the saying you want to add?", :placeholder => "Fear is the disease. Hustle is the antidote." %>
+            <br />
+            <%= f.input :author, :label => "Who is the author of the quote?", :placeholder => 'Travis Ka lanick' %>
             </div>
 
 		<div class="modal-footer">
@@ -82,14 +83,13 @@ Splurting out unsolicited advice about entrepreneurship since 2014
 
 <div class="footer">
 <div class="container">
+	<div class="col-xs-12 col-sm-6">
+		<%= link_to "This isn't enough, I need more", root_path, :class => 'next-quote' %>
+	</div>
 
-<div class="col-xs-6">
-<%= link_to "This isn't enough, I need more", root_path, :class => 'next-quote' %>
-</div>
-
-<div class="col-xs-6 footer-blurb"> 
+	<div class="col-xs-12 col-sm-6 footer-blurb"> 
 	Handcrafted from within the UK by <a href:"http://www.calitrixdigital.com">Calitrix Digital</a>
-<br />
+	<br />
 	Don't forget to check out their latest work or become a client <a href:"http://www.calitrixdigital.com">Everything digital comes to life</a>
 	</div>
 

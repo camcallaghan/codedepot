@@ -136,7 +136,7 @@ DEPENDENCIES
   jquery-rails
   pg
   popper_js (= 1.11.1)
-  rails (= 4.0.1)
+  rails (~> 4.2.7.1)
   rails_12factor
   sass-rails
   sdoc

@@ -5,7 +5,7 @@ GEM
     actionmailer (4.0.1)
       actionpack (= 4.0.1)
       mail (~> 2.5.5)
-    actionpack (4.0.1)
+    actionpack (~> 4.2.5.1)
       activesupport (= 4.1.11)
       builder (~> 3.1.0)
       erubis (~> 2.7.0)

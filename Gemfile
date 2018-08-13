@@ -41,7 +41,7 @@ end
 # include Bootstrap
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.3.5.1'
-gem 'sprockets', '2.12.5'
+gem 'sprockets', '2.11.0'
 gem 'sass-rails'
 
 #Adding Simpleform gem to handle our form
